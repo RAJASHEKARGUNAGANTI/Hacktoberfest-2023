@@ -10,6 +10,7 @@ import {
   Works,
   StarsCanvas,
   SmoothScroll,
+  Footer,
 } from "./components";
 
 const App = () => {
@@ -33,6 +34,11 @@ const App = () => {
             {/* <StarsCanvas /> */}
           </div>
         </div>
+      {/* Footer Component */}
+      <div className="relative b-12 h-36 z-0">
+
+          <Footer />
+      </div>
       </SmoothScroll>
     </BrowserRouter>
   );

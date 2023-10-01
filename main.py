@@ -1,7 +1,7 @@
 import random
 
 # Snake Water Gun or Rock Paper Scissors
-def gameWin(comp, you):
+def game_Win(comp, you):
     # If two values are equal, declare a tie!
     if comp == you:
         return None
@@ -37,7 +37,7 @@ elif randNo == 3:
     comp = 'g'
 
 you = input("Your Turn: Snake(s) Water(w) or Gun(g)?")
-a = gameWin(comp, you)
+a = game_Win(comp, you)
 
 print(f"Computer chose {comp}")
 print(f"You chose {you}")
@@ -45,6 +45,6 @@ print(f"You chose {you}")
 if a == None:
     print("The game is a tie!")
 elif a:
-    print("You Win!")
+    print("You Win The game!")
 else:
-    print("You Lose!")
+    print("You Lose The game !")

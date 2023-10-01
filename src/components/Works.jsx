@@ -1,13 +1,10 @@
-import React from "react";
-import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+<<<<<<< HEAD
 const ProjectCard = ({
   index,
   name,
@@ -66,6 +63,9 @@ const ProjectCard = ({
     </motion.div>
   );
 };
+=======
+import ProjectCard from "./ProjectCard";
+>>>>>>> origin/master
 
 const Works = () => {
   return (
@@ -90,7 +90,7 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={`project-${index}`} index={index} project={project} />
         ))}
       </div>
     </>

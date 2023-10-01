@@ -1,6 +1,6 @@
 # Hacktoberfest Beginner's Guide
 
-Welcome to Hacktoberfest! This is a beginner-friendly guide to help you get started with your first Pull Request (PR) for Hacktoberfest. We're excited to have you join the open source community and contribute to this project.
+Welcome to Hacktoberfest! This is a beginner-friendly guide to help you get started with your first Pull Request (PR) for Hacktoberfest. We're excited to have you join the open-source community and contribute to this project.
 </br>
 <div align="center">
 <img  alt="bannar" align="center" src="https://i.postimg.cc/Ssyr2rn7/hf10-banner-1032x600.png">
@@ -83,12 +83,12 @@ Write a clear and concise description of your changes in the Pull Request descri
 
 Click the "Create Pull Request" button to submit your changes for review.
 
-### Additional info:For Staged changes
+### Additional info: For Staged changes
       
        git reset <- file name ->
        git reset
 
-### Commited changes (for many commits)
+### Committed changes (for many commits)
     git reset <-commit hash->
     git reset --hard <-commit hash->
   

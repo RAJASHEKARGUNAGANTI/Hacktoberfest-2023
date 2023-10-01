@@ -1,17 +1,19 @@
-let imgBox = document.getElementById("imgBox");
-let qrImage = document.getElementById("qrImage");
-let qrText = document.getElementById("qrText");
+const imgBox = document.getElementById("imgBox");
+const qrImage = document.getElementById("qrImage");
+const qrText = document.getElementById("qrText");
+
+qrText.addEventListener("input", generateQR);
+
 function generateQR() {
-    if(qrText.value.length > 0){
-        qrImage.src =
-        "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +
-        qrText.value;
+    const inputValue = qrText.value.trim();
+    if (inputValue.length > 0) {
+        const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(inputValue)}`;
+        qrImage.src = qrCodeUrl;
         imgBox.classList.add("show-img");
-    }else{
-        qrText.classList.add('error');
+    } else {
+        qrText.classList.add("error");
         setTimeout(() => {
-            qrText.classList.remove('error'); 
+            qrText.classList.remove("error");
         }, 1000);
     }
- 
 }
